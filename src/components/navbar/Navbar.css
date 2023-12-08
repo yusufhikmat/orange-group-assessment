@@ -1,0 +1,22 @@
+nav {
+	background-color: #001b79;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	padding: 0 2rem;
+	height: 3rem;
+	align-items: center;
+	margin-bottom: 2rem;
+	position: fixed;
+	width: 100%;
+}
+.logo-title {
+	font-size: 2rem;
+}
+.nav-menu {
+	position: relative;
+}
+.nav-cart-number {
+	position: absolute;
+	top: -0.5rem;
+}

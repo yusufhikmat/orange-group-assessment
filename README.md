@@ -1,46 +1,119 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Shopping App
 
-## Available Scripts
+A simple React shopping app with Redux state management.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- Getting Started
+- Prerequisites
+- Installation
+- Running the Project
+- Project Structure
+- Assumptions
+- Contributing
+- License
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Before you begin, ensure you have Node.js and npm installed on your machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   git clone https://github.com/yusufhikmat/orange-group-assessment.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Change into the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   cd orange-group-assessment
 
-### `npm run eject`
+3. Install dependencies:
+   npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Running the Project
+To run the project, follow these steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Start the development server:
+   npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Open your browser and navigate to http://        localhost:3000.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Project structure 
+    
+    orange-group/
+│
+├── src/
+│   ├── components/
+│   │   ├── allProducts/
+│   │   │   ├── AllProducts.css
+│   │   │   ├── AllProducts.tsx
+│   │   │   └── 
+│   │   ├── footer/
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Footer.css
+│   │   │   └── 
+│   │   └── 
+│   │   ├── heroSection/
+│   │   │   ├── Hero.css
+│   │   │   ├── Hero.tsx
+│   │   │   └── 
+│   │   ├── navbar/
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── ShoppiNavbarngCart.css
+│   │   │   └── 
+│   │   └── ...
+│   ├── pages/
+│   │   ├── cart/
+│   │   │   ├── Cart.css
+│   │   │   ├── Cart.tsx
+│   │   │   └── 
+│   │   ├── home/
+│   │   │   ├── Home.tsx
+│   │   │   ├── Home.css
+│   │   │   └── 
+│   │   └── 
+│   │   ├── notFound/
+│   │   │   ├── NotFound.css
+│   │   │   ├── NotFound.tsx
+│   │   │   └── 
+│   │   ├── productDetails/
+│   │   │   ├── ProductDetails.tsx
+│   │   │   ├── ProductDetails.css
+│   │   │   └── 
+│   │   └── ...
+│   ├── redux/
+│   │   ├── api/
+│   │   │   ├── ProductsApi.js
+│   │   │   └── ...
+│   │   ├── slice/
+│   │   │   ├── cartSlice.js
+│   │   │   └── ...
+│   └── ...
+│
+├── public/
+│   └── ...
+│
+├── .store.tsx
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
 
-## Learn More
+. src/components/: Contains React components.
+. src/redux/api/: API-related logic and configurations.
+. src/redux/slice/: Redux slice files defining actions and reducers.
+. src/store.js: Redux store setup.
+. public/: Public assets and the HTML template.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Assumptions
+ The project assumes a JSON API at https://fakestoreapi.com/products.
+ The cart logic is managed with Redux.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Contributing
+  Contributions are welcome! Please follow the contribution guidelines.
+
+### License
+This project is licensed under the MIT License.
